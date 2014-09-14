@@ -1,0 +1,409 @@
+fileFormatVersion: 2
+guid: 9555ded47389e934fb6cad68fa1b79d3
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: SPRITE-FOR-OMARI_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1498
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1057
+        width: 374
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_2
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1057
+        width: 235
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_3
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1066
+        width: 206
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_4
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 1066
+        width: 347
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_5
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 1066
+        width: 367
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_6
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 1066
+        width: 347
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_7
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1066
+        width: 234
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_8
+      rect:
+        serializedVersion: 2
+        x: 3197
+        y: 1037
+        width: 245
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_9
+      rect:
+        serializedVersion: 2
+        x: 3657
+        y: 1027
+        width: 377
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_10
+      rect:
+        serializedVersion: 2
+        x: 4357
+        y: 1189
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_11
+      rect:
+        serializedVersion: 2
+        x: 4626
+        y: 998
+        width: 377
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 556
+        width: 406
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_13
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 556
+        width: 327
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_14
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 566
+        width: 308
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_15
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 566
+        width: 347
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_16
+      rect:
+        serializedVersion: 2
+        x: 1808
+        y: 566
+        width: 367
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_17
+      rect:
+        serializedVersion: 2
+        x: 2278
+        y: 566
+        width: 347
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_18
+      rect:
+        serializedVersion: 2
+        x: 2826
+        y: 566
+        width: 317
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_19
+      rect:
+        serializedVersion: 2
+        x: 3207
+        y: 556
+        width: 318
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_20
+      rect:
+        serializedVersion: 2
+        x: 3667
+        y: 547
+        width: 396
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_21
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 856
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_22
+      rect:
+        serializedVersion: 2
+        x: 4636
+        y: 547
+        width: 374
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_23
+      rect:
+        serializedVersion: 2
+        x: 4367
+        y: 708
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_24
+      rect:
+        serializedVersion: 2
+        x: 4367
+        y: 669
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_25
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 27
+        width: 299
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_26
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 27
+        width: 293
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_27
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 27
+        width: 166
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_28
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 27
+        width: 318
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_29
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 0
+        width: 260
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_30
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 0
+        width: 308
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_31
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 0
+        width: 342
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_32
+      rect:
+        serializedVersion: 2
+        x: 2659
+        y: 0
+        width: 343
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_33
+      rect:
+        serializedVersion: 2
+        x: 3065
+        y: 0
+        width: 348
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_34
+      rect:
+        serializedVersion: 2
+        x: 3525
+        y: 0
+        width: 299
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_35
+      rect:
+        serializedVersion: 2
+        x: 3897
+        y: 7
+        width: 296
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_36
+      rect:
+        serializedVersion: 2
+        x: 4239
+        y: 0
+        width: 333
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_37
+      rect:
+        serializedVersion: 2
+        x: 4655
+        y: 37
+        width: 308
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: SPRITE-FOR-OMARI_38
+      rect:
+        serializedVersion: 2
+        x: 4089
+        y: 1031
+        width: 415
+        height: 403
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: SPRITE-FOR-OMARI_39
+      rect:
+        serializedVersion: 2
+        x: 4089
+        y: 547
+        width: 424
+        height: 407
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 
