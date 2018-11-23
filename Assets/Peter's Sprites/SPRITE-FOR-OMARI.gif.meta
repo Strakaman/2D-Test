@@ -1,32 +1,82 @@
 fileFormatVersion: 2
 guid: 9555ded47389e934fb6cad68fa1b79d3
 TextureImporter:
-  serializedVersion: 2
+  fileIDToRecycleName:
+    21300000: SPRITE-FOR-OMARI_0
+    21300002: SPRITE-FOR-OMARI_1
+    21300004: SPRITE-FOR-OMARI_2
+    21300006: SPRITE-FOR-OMARI_3
+    21300008: SPRITE-FOR-OMARI_4
+    21300010: SPRITE-FOR-OMARI_5
+    21300012: SPRITE-FOR-OMARI_6
+    21300014: SPRITE-FOR-OMARI_7
+    21300016: SPRITE-FOR-OMARI_8
+    21300018: SPRITE-FOR-OMARI_9
+    21300020: SPRITE-FOR-OMARI_10
+    21300022: SPRITE-FOR-OMARI_11
+    21300024: SPRITE-FOR-OMARI_12
+    21300026: SPRITE-FOR-OMARI_13
+    21300028: SPRITE-FOR-OMARI_14
+    21300030: SPRITE-FOR-OMARI_15
+    21300032: SPRITE-FOR-OMARI_16
+    21300034: SPRITE-FOR-OMARI_17
+    21300036: SPRITE-FOR-OMARI_18
+    21300038: SPRITE-FOR-OMARI_19
+    21300040: SPRITE-FOR-OMARI_20
+    21300042: SPRITE-FOR-OMARI_21
+    21300044: SPRITE-FOR-OMARI_22
+    21300046: SPRITE-FOR-OMARI_23
+    21300048: SPRITE-FOR-OMARI_24
+    21300050: SPRITE-FOR-OMARI_25
+    21300052: SPRITE-FOR-OMARI_26
+    21300054: SPRITE-FOR-OMARI_27
+    21300056: SPRITE-FOR-OMARI_28
+    21300058: SPRITE-FOR-OMARI_29
+    21300060: SPRITE-FOR-OMARI_30
+    21300062: SPRITE-FOR-OMARI_31
+    21300064: SPRITE-FOR-OMARI_32
+    21300066: SPRITE-FOR-OMARI_33
+    21300068: SPRITE-FOR-OMARI_34
+    21300070: SPRITE-FOR-OMARI_35
+    21300072: SPRITE-FOR-OMARI_36
+    21300074: SPRITE-FOR-OMARI_37
+    21300076: SPRITE-FOR-OMARI_38
+    21300078: SPRITE-FOR-OMARI_39
+  externalObjects: {}
+  serializedVersion: 7
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 1
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -34,18 +84,47 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings:
-  - buildTarget: iPhone
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 1024
-    textureFormat: -2
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 2
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: SPRITE-FOR-OMARI_0
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_0
       rect:
         serializedVersion: 2
         x: 17
@@ -54,7 +133,18 @@ TextureImporter:
         height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_1
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94864a9e534bb244f8ce37b88adbd372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_1
       rect:
         serializedVersion: 2
         x: 0
@@ -63,7 +153,18 @@ TextureImporter:
         height: 406
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_2
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86f806627cde7643bd7edbfb74b9e2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_2
       rect:
         serializedVersion: 2
         x: 536
@@ -72,7 +173,18 @@ TextureImporter:
         height: 397
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_3
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d04659ff4f849740b9b38d3941313d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_3
       rect:
         serializedVersion: 2
         x: 1015
@@ -81,7 +193,18 @@ TextureImporter:
         height: 417
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_4
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4408a58eb1f77c4dbd4ba9ab83494e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_4
       rect:
         serializedVersion: 2
         x: 1348
@@ -90,7 +213,18 @@ TextureImporter:
         height: 417
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_5
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80924a605f5af54479cc319aa6818447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_5
       rect:
         serializedVersion: 2
         x: 1798
@@ -99,7 +233,18 @@ TextureImporter:
         height: 407
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_6
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a0d12fad38da24fb38df9f10546bb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_6
       rect:
         serializedVersion: 2
         x: 2268
@@ -108,7 +253,18 @@ TextureImporter:
         height: 417
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_7
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f121c37a029d64983de1f7e9b4515a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_7
       rect:
         serializedVersion: 2
         x: 2816
@@ -117,7 +273,18 @@ TextureImporter:
         height: 417
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_8
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4599c93a0ead244b9d6d242eebdfc59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_8
       rect:
         serializedVersion: 2
         x: 3197
@@ -126,7 +293,18 @@ TextureImporter:
         height: 426
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_9
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8df414744948084f94c02a9f13d6ccf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_9
       rect:
         serializedVersion: 2
         x: 3657
@@ -135,7 +313,18 @@ TextureImporter:
         height: 407
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_10
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3458755cfbd46e4298ce58ec5ccfbd4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_10
       rect:
         serializedVersion: 2
         x: 4357
@@ -144,7 +333,18 @@ TextureImporter:
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_11
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4dc78270816354cbe7c7d8d32a033e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_11
       rect:
         serializedVersion: 2
         x: 4626
@@ -153,7 +353,18 @@ TextureImporter:
         height: 426
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_12
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7533a4da5bdf744fb84940d787ec77e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_12
       rect:
         serializedVersion: 2
         x: 7
@@ -162,7 +373,18 @@ TextureImporter:
         height: 407
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_13
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90c4c2b77e92384e93ee6c44a97456b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_13
       rect:
         serializedVersion: 2
         x: 546
@@ -171,7 +393,18 @@ TextureImporter:
         height: 398
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_14
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f166551d06a0744a46fb2c4ca04354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_14
       rect:
         serializedVersion: 2
         x: 1015
@@ -180,7 +413,18 @@ TextureImporter:
         height: 427
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_15
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082ba0a62c9bf004d928ee5ea4dfc725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_15
       rect:
         serializedVersion: 2
         x: 1358
@@ -189,7 +433,18 @@ TextureImporter:
         height: 417
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_16
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b25aab631439e4da1cf76ebbf2f230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_16
       rect:
         serializedVersion: 2
         x: 1808
@@ -198,7 +453,18 @@ TextureImporter:
         height: 407
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_17
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9a18ac0c9391642860c4584e075b00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_17
       rect:
         serializedVersion: 2
         x: 2278
@@ -207,7 +473,18 @@ TextureImporter:
         height: 417
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_18
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1ee3758f7b19b438ef565e3a17f947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_18
       rect:
         serializedVersion: 2
         x: 2826
@@ -216,7 +493,18 @@ TextureImporter:
         height: 427
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_19
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393658e89c0d85b4aa6e6a50a2bb0445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_19
       rect:
         serializedVersion: 2
         x: 3207
@@ -225,7 +513,18 @@ TextureImporter:
         height: 427
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_20
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3903e10ecd9d3704580b2a6a40f89a8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_20
       rect:
         serializedVersion: 2
         x: 3667
@@ -234,7 +533,18 @@ TextureImporter:
         height: 407
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_21
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834feaf972349714a8456d3c2e6df8d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_21
       rect:
         serializedVersion: 2
         x: 4416
@@ -243,7 +553,18 @@ TextureImporter:
         height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_22
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d012a9db94c256440a50efdc862347c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_22
       rect:
         serializedVersion: 2
         x: 4636
@@ -252,7 +573,18 @@ TextureImporter:
         height: 426
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_23
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86e2ae2dbfe20d84dab8a751a5f5685d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_23
       rect:
         serializedVersion: 2
         x: 4367
@@ -261,7 +593,18 @@ TextureImporter:
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_24
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0bbd7fd00966741b59f41c5e53c299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_24
       rect:
         serializedVersion: 2
         x: 4367
@@ -270,7 +613,18 @@ TextureImporter:
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_25
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c257b663bef184aaa6df520cb1cec1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_25
       rect:
         serializedVersion: 2
         x: 95
@@ -279,7 +633,18 @@ TextureImporter:
         height: 407
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_26
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8afaec5dd70e2ee4990ae63b67142850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_26
       rect:
         serializedVersion: 2
         x: 409
@@ -288,7 +653,18 @@ TextureImporter:
         height: 407
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_27
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12b080c41f6f9b4197463d87ce73802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_27
       rect:
         serializedVersion: 2
         x: 795
@@ -297,7 +673,18 @@ TextureImporter:
         height: 245
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_28
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83a14751b246ac40b9c397a785b2e16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_28
       rect:
         serializedVersion: 2
         x: 1005
@@ -306,7 +693,18 @@ TextureImporter:
         height: 407
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_29
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85cb6875b53fabb448c1a82deb4f35ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_29
       rect:
         serializedVersion: 2
         x: 1465
@@ -315,7 +713,18 @@ TextureImporter:
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_30
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403677855d88e004c8da2e0c88496a27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_30
       rect:
         serializedVersion: 2
         x: 1867
@@ -324,7 +733,18 @@ TextureImporter:
         height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_31
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e7fa416f820d643a5194e0340d1313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_31
       rect:
         serializedVersion: 2
         x: 2219
@@ -333,7 +753,18 @@ TextureImporter:
         height: 522
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_32
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f653d264799d81b44870d02a077b8b24
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_32
       rect:
         serializedVersion: 2
         x: 2659
@@ -342,7 +773,18 @@ TextureImporter:
         height: 522
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_33
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d13fd3800e4f4740a0881356239b1e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_33
       rect:
         serializedVersion: 2
         x: 3065
@@ -351,7 +793,18 @@ TextureImporter:
         height: 502
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_34
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2fe88993c81e44fab145b95ee525d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_34
       rect:
         serializedVersion: 2
         x: 3525
@@ -360,7 +813,18 @@ TextureImporter:
         height: 493
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_35
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a1e839feaf3924ca551255a1aae827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_35
       rect:
         serializedVersion: 2
         x: 3897
@@ -369,7 +833,18 @@ TextureImporter:
         height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_36
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b899def4add620b4388ac89a319cad67
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_36
       rect:
         serializedVersion: 2
         x: 4239
@@ -378,7 +853,18 @@ TextureImporter:
         height: 483
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_37
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d6729ec5e40ef49be261cf8e6c3019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_37
       rect:
         serializedVersion: 2
         x: 4655
@@ -387,7 +873,18 @@ TextureImporter:
         height: 387
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: SPRITE-FOR-OMARI_38
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9135d2fc5598d934096d27707e863941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_38
       rect:
         serializedVersion: 2
         x: 4089
@@ -395,8 +892,19 @@ TextureImporter:
         width: 415
         height: 403
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: SPRITE-FOR-OMARI_39
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f9efe49f13d94d43a26e670ada4b88f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITE-FOR-OMARI_39
       rect:
         serializedVersion: 2
         x: 4089
@@ -404,6 +912,28 @@ TextureImporter:
         width: 424
         height: 407
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf53d5e1e92503049805ba63e5ea614a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

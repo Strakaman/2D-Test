@@ -17,7 +17,7 @@ public class Ring : MonoBehaviour {
 		//the player's ring collision method to be called.
 		if (collInfo.gameObject.tag == "Player")
 		{
-			collInfo.gameObject.BroadcastMessage("RingCollision",collider2D.transform);
+			collInfo.gameObject.BroadcastMessage("RingCollision",GetComponent<Collider2D>().transform);
 			//send the transform as well so that player will automatically move to center
 		}
 	}

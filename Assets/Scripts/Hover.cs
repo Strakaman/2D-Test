@@ -8,7 +8,7 @@ public class Hover : MonoBehaviour {
 	private float totaldelay; //after a certain period of time, reverse direction of hover
 	// Use this for initialization
 	void Start () {
-		rigidbody2D.velocity = CalV();
+		GetComponent<Rigidbody2D>().velocity = CalV();
 	}
 
 	Vector2 CalV()
@@ -21,12 +21,12 @@ public class Hover : MonoBehaviour {
 		if (totaldelay > 7)
 		{
 			dir *= -1;
-			rigidbody2D.velocity = CalV();
+			GetComponent<Rigidbody2D>().velocity = CalV();
 			totaldelay = 0;
 		}
 		else if (totaldelay > 5)
 		{
-			rigidbody2D.velocity = new Vector2(0,0);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
 		}
 		/*if ((totaldelay > 5) && (rigidbody2D.velocity != new Vector2(0,0)))
 		{

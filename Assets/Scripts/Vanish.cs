@@ -19,8 +19,8 @@ public class Vanish : MonoBehaviour {
 			totaldelay = 0;
 			foreach (GameObject ob in vplats)
 				{
-					ob.transform.collider2D.enabled = appear; //make the collider dissapear
-					ob.transform.renderer.enabled = appear; //make the visual of the platform dissappear
+					ob.transform.GetComponent<Collider2D>().enabled = appear; //make the collider dissapear
+					ob.transform.GetComponent<Renderer>().enabled = appear; //make the visual of the platform dissappear
 				}
 			appear = !appear; //if they dissappeared this time, next time they will appear, and vice versa
 			}

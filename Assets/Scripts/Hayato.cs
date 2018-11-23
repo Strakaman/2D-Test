@@ -21,10 +21,10 @@ public class Hayato : MonoBehaviour
 
 	void Start ()
 	{
-		gravity = rigidbody2D.gravityScale; //store off the gravity for later reference
+		gravity = GetComponent<Rigidbody2D>().gravityScale; //store off the gravity for later reference
 		BoxCollider2D zollider = GetComponent<BoxCollider2D> ();
 		s = zollider.size;
-		c = zollider.center;
+		c = zollider.offset;
 	}
 
 	// Update is called once per frame
@@ -58,16 +58,16 @@ public class Hayato : MonoBehaviour
 					} else if (GMScript.state.Equals (GMScript.Context.zipping)) {
 						ZipJump();
 					} else if (GMScript.state.Equals(GMScript.Context.ringing)) {
-							rigidbody2D.gravityScale = gravity;
+							GetComponent<Rigidbody2D>().gravityScale = gravity;
 							Jump();
 							GMScript.state = GMScript.Context.normal;
 							if (Input.GetKey(rightKey))
 							{
-								rigidbody2D.velocity = new Vector2 (MAXSPEED/5, rigidbody2D.velocity.y);
+								GetComponent<Rigidbody2D>().velocity = new Vector2 (MAXSPEED/5, GetComponent<Rigidbody2D>().velocity.y);
 							}
 							else if (Input.GetKey(leftKey))
 							{
-								rigidbody2D.velocity = new Vector2 (-MAXSPEED/5, rigidbody2D.velocity.y);
+								GetComponent<Rigidbody2D>().velocity = new Vector2 (-MAXSPEED/5, GetComponent<Rigidbody2D>().velocity.y);
 							}
 					}		
 			}
@@ -84,7 +84,7 @@ public class Hayato : MonoBehaviour
 
 	private void Jump ()
 	{//for modularity purposes
-			rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, JUMPSPEED);
+			GetComponent<Rigidbody2D>().velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, JUMPSPEED);
 			UnGroundSelf();
 	}
 	private bool CanWallJump(out int dir)
@@ -115,24 +115,24 @@ public class Hayato : MonoBehaviour
 
 	private void WallJump(int dir)
 	{
-		rigidbody2D.velocity = new Vector2(MAXSPEED * dir,.9f *JUMPSPEED);
+		GetComponent<Rigidbody2D>().velocity = new Vector2(MAXSPEED * dir,.9f *JUMPSPEED);
 	}
 
 	private void CalcHVeloctity (float dir)
 	{ //dir variable passed in as indication of whether player pressed left or right
-			if (rigidbody2D.velocity.x != (MAXSPEED * dir)) { //only accelerate if player hasn't already hit it's max velocity in that direction
-					float newV = rigidbody2D.velocity.x + (ACCEL * Time.deltaTime * dir); //increase speed in whatever direction player pressed
+			if (GetComponent<Rigidbody2D>().velocity.x != (MAXSPEED * dir)) { //only accelerate if player hasn't already hit it's max velocity in that direction
+					float newV = GetComponent<Rigidbody2D>().velocity.x + (ACCEL * Time.deltaTime * dir); //increase speed in whatever direction player pressed
 					if (Mathf.Abs (newV) > MAXSPEED) {
 							newV = MAXSPEED * dir; //account for if velocity change would send user over max horizontal speed
 					}
-					rigidbody2D.velocity = new Vector2 (newV, rigidbody2D.velocity.y); //set speed to value established by equations
+					GetComponent<Rigidbody2D>().velocity = new Vector2 (newV, GetComponent<Rigidbody2D>().velocity.y); //set speed to value established by equations
 			}
 	}
 
 	private void Stop()
 	{
-		rigidbody2D.velocity = new Vector2(0,0);
-		rigidbody2D.gravityScale = 0;
+		GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+		GetComponent<Rigidbody2D>().gravityScale = 0;
 	}
 
 	public void SpringCollision (GMScript.Springer sprop)
@@ -144,10 +144,10 @@ public class Hayato : MonoBehaviour
 		float dirx = sprop.elRay.direction.x;
 		float diry = sprop.elRay.direction.y;
 		if (Mathf.Abs(dirx) != Mathf.Abs(diry)){
-			rigidbody2D.velocity = new Vector2 (dirx * MAXSPEED, diry * mag);
+			GetComponent<Rigidbody2D>().velocity = new Vector2 (dirx * MAXSPEED, diry * mag);
 		}
 		else { //want the 45 degree angle spring to have more horizontal power
-			rigidbody2D.velocity = new Vector2(Mathf.Sign(dirx) * MAXSPEED, diry * mag);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Sign(dirx) * MAXSPEED, diry * mag);
 		}	
 			UnGroundSelf();
 		if (!GMScript.state.Equals(GMScript.Context.dead))
@@ -171,8 +171,8 @@ public class Hayato : MonoBehaviour
 		GMScript.state = GMScript.Context.zipping;
 		transform.position = attachto.position;
 		Vector2 jVel = new Vector2 (MAXSPEED * Mathf.Cos(-0.174532925f), MAXSPEED * Mathf.Sin(-0.174532925f));
-		rigidbody2D.velocity = jVel;
-		rigidbody2D.gravityScale = 0;
+		GetComponent<Rigidbody2D>().velocity = jVel;
+		GetComponent<Rigidbody2D>().gravityScale = 0;
 		Invoke("ZipJump",4.4f); //after 4.2 seconds (based on zipline length), you have reached the end of the zipline if you are still on it
 
 	}
@@ -181,9 +181,9 @@ public class Hayato : MonoBehaviour
 	{
 		if (GMScript.state.Equals(GMScript.Context.zipping))
 		{
-			rigidbody2D.velocity = new Vector2 (MAXSPEED, rigidbody2D.velocity.y);
+			GetComponent<Rigidbody2D>().velocity = new Vector2 (MAXSPEED, GetComponent<Rigidbody2D>().velocity.y);
 			GMScript.state = GMScript.Context.normal;
-			rigidbody2D.gravityScale = gravity;
+			GetComponent<Rigidbody2D>().gravityScale = gravity;
 		}
 	}
 
@@ -206,9 +206,9 @@ public class Hayato : MonoBehaviour
 	public void RingCollision(Transform ringTransform)
 	{
 		GMScript.state = GMScript.Context.ringing;
-		rigidbody2D.velocity = new Vector2(0,0);
+		GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
 		transform.position = ringTransform.position;
-		rigidbody2D.gravityScale = 0;
+		GetComponent<Rigidbody2D>().gravityScale = 0;
 
 	}
 
@@ -217,7 +217,7 @@ public class Hayato : MonoBehaviour
 		//rigidbody2D.AddForce(new Vector2(0,.1f));	
 		//if (rigidbody2D.velocity.y > 9)
 		//{
-			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, 6f);
+			GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, 6f);
 		//float x = (transform.position.y - lol.position.y);
 		//x /= 3200;
 		//x /= 999.75f;
