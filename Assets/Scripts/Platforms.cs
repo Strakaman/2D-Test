@@ -14,7 +14,7 @@ public class Platforms : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter2D(Collision2D collInfo)
+    void OnCollisionEnter2D(Collision2D collInfo)
 	{
 		if (collInfo.gameObject.tag == "Player")
 		{

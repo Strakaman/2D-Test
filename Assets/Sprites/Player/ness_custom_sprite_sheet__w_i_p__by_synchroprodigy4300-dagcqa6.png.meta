@@ -1,0 +1,2704 @@
+fileFormatVersion: 2
+guid: e5588b0ae6eb79e4f846fa68b5d2da84
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_0
+    21300002: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_1
+    21300004: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_2
+    21300006: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_3
+    21300008: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_4
+    21300010: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_5
+    21300012: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_6
+    21300014: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_7
+    21300016: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_8
+    21300018: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_9
+    21300020: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_10
+    21300022: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_11
+    21300024: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_12
+    21300026: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_13
+    21300028: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_14
+    21300030: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_15
+    21300032: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_16
+    21300034: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_17
+    21300036: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_18
+    21300038: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_19
+    21300040: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_20
+    21300042: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_21
+    21300044: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_22
+    21300046: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_23
+    21300048: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_24
+    21300050: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_25
+    21300052: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_26
+    21300054: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_27
+    21300056: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_28
+    21300058: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_29
+    21300060: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_30
+    21300062: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_31
+    21300064: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_32
+    21300066: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_33
+    21300068: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_34
+    21300070: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_35
+    21300072: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_36
+    21300074: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_37
+    21300076: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_38
+    21300078: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_39
+    21300080: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_40
+    21300082: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_41
+    21300084: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_42
+    21300086: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_43
+    21300088: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_44
+    21300090: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_45
+    21300092: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_46
+    21300094: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_47
+    21300096: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_48
+    21300098: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_49
+    21300100: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_50
+    21300102: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_51
+    21300104: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_52
+    21300106: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_53
+    21300108: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_54
+    21300110: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_55
+    21300112: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_56
+    21300114: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_57
+    21300116: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_58
+    21300118: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_59
+    21300120: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_60
+    21300122: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_61
+    21300124: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_62
+    21300126: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_63
+    21300128: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_64
+    21300130: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_65
+    21300132: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_66
+    21300134: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_67
+    21300136: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_68
+    21300138: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_69
+    21300140: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_70
+    21300142: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_71
+    21300144: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_72
+    21300146: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_73
+    21300148: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_74
+    21300150: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_75
+    21300152: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_76
+    21300154: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_77
+    21300156: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_78
+    21300158: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_79
+    21300160: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_80
+    21300162: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_81
+    21300164: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_82
+    21300166: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_83
+    21300168: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_84
+    21300170: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_85
+    21300172: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_86
+    21300174: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_87
+    21300176: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_88
+    21300178: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_89
+    21300180: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_90
+    21300182: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_91
+    21300184: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_92
+    21300186: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_93
+    21300188: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_94
+    21300190: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_95
+    21300192: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_96
+    21300194: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_97
+    21300196: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_98
+    21300198: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_99
+    21300200: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_100
+    21300202: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_101
+    21300204: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_102
+    21300206: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_103
+    21300208: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_104
+    21300210: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_105
+    21300212: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_106
+    21300214: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_107
+    21300216: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_108
+    21300218: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_109
+    21300220: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_110
+    21300222: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_111
+    21300224: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_112
+    21300226: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_113
+    21300228: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_114
+    21300230: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_115
+    21300232: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_116
+    21300234: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_117
+    21300236: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_118
+    21300238: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_119
+    21300240: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_120
+    21300242: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_121
+    21300244: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_122
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_0
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 601
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea8e65e10c772c4c942a0cb364576d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 558
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e23f5fc46809984caf9a305bbdc9090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_2
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 560
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1709e95de94d7194f843783c8e7a1215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_3
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 563
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656713d4321c583429e2c8a7b0c85667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_4
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 563
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58e5cc458a354346ba97ccc8870e7fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 563
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2091dfee398c94cb49419b3739699b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 563
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85749c3713606ce49821f830d3e30277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_7
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 563
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c18c9580acaaeb42971305ccd7df04c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_8
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 563
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808b02e0df9df9d4fb01433ab83612a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 492
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6389f16ae4053a44d84ffe32f327919f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_10
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 492
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9accb823fa31511479ce08234405371a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_11
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 492
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d32f3ee9b84f8f449375f6571692ce5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_12
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 492
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbdbbe45ef6d7943bfe3ed1e303a2bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_13
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 492
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1d16da7b699084db6d6027c3a3078b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_14
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 460
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e370e2193214344aa3f16af4233c75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_15
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 461
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317db77b2d4fa8f44ac233604a3c198c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_16
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 461
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a6f82aeb13e814bbc46ed72d35c092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_17
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 461
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3d975012fb3144fb8df0cce30fbc22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 446
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6baebded9505977458b56cdd03af577e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_19
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 446
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301a02aa68ba1f3459f8bd31a13a5688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_20
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 446
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7d221199447154e93fb106d37902a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_21
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 446
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ea7a7d760c63a478ff1350140d5427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_22
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 446
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3636ecbc09090fa4d9d12b3210377142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_23
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 458
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a4a997ec12855418b10bc18508c1a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 396
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d98e6d8b2b6db54f98ac5eddd67dd05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_25
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 396
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de6092567701bd4e8a798bdcf3d6fa2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_26
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 396
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d93bb14f7fdb274e9b34dc9a6fccbab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_27
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 396
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85536705db0a9524f906b7b4cce6a464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_28
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 396
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e52c8ab454973b4e9a822d53765407d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_29
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 396
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc78868bf9c299418555e1873ee17d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_30
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 396
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f594c29f08fb463459a7195c308bc42c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_31
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 396
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39d43a5c8e4d424cad47895fc0cad0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_32
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 408
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbcb99104456d54899c8fde5f2cf133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_33
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 412
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e21c73d2d2d6c748b4ca0814d9016a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_34
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 414
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ac40421f7d5b84493b84017743f4fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_35
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 378
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd40d6beae3ef734c9e73cbcb2d6c484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_36
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 415
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c00647da2120f84d96b6828ca07565c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_37
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 419
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe8b9b2d616542428845fad31ede204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_38
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 416
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a92baf3b392cf48aa049152d7ccdfd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_39
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 418
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f64813e1f78703448fbe5b1e794b1eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_40
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 389
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad96411446fb2df4bbe9b61a2175defc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_41
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 386
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b81307c9e375345b8f4699e771a5d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_42
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 383
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10b500d071e09546aeb99d01c2ed266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_43
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 378
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440c740314e34364dbf62bb166a2a193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_44
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 378
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f39d3afba5e264cbadd16afe08af6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_45
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 378
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d753c6485263de4ca396871ac857663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_46
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 377
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b42f84222d28f4db8915a3a27c0573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_47
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 377
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14b0f9dc3b8c2042a92ce35c025c418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_48
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 377
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a3f121396b17d41ad831c3209d0415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_49
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 378
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb28a401d989bf4d8677755046fcd6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_50
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 373
+        width: 74
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c064e2c8dd4514cbf65234a8c2ce12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_51
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 370
+        width: 57
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc322f904126604e966a74603267dd6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_52
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 348
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9a2586a5cf7e84aa893bbc92ccf2de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_53
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 349
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f1cda8875189d4a9f772932cafa264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_54
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 348
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b8ffc4c2230e142aee850f74a7da66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_55
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 346
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54e2c24047273646b5800eceed8819a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 327
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e692ae96db7ab848822ba354e2d327c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_57
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 327
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6b15015377b5a4c890e0c5dc1b1381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_58
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 335
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ed2224586289d428e120d125d277bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_59
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 335
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb6019730c1c6f4b8cd135ebb704981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_60
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 327
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e97d7b01a8e31548b5989ee9858c3e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_61
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 327
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f4d6e141a1b574480bdb2c08aaa835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_62
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 327
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf926615ccec5543b23a71378819abe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_63
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 327
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff80c22dc276c984497857d857399aa4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_64
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 327
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb13875981c0624e820b8757850afe5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_65
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 327
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d32b61895c285043a131fad90341e98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_66
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 312
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1dfb6bce857ff41b7384b304364238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_67
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 313
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26455e5c3ec30414da345bd1ccde4988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_68
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 312
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf102bc82ef5a2544ae9e881ee6999ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_69
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 310
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224b7e6c81ffe2447a3287befa0dc0d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_70
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 240
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d278feb69af23743b180af5e2246a0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_71
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 240
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c4c9ece4bd4ca40b6716e36995ebd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_72
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 240
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583e42e7c83b95f45a0f816855c8f677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_73
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 240
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93cb9c93e748bc49b82f38caa0052d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_74
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 240
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfe1a4ff657d6f4f8806eac5b4508a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_75
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 241
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0914f0b950428ef47b864879ea8e9c78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_76
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 241
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe240a527d905348ace1688c9f8efd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_77
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 241
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b178bfff774fb634b99c7ea7f9917765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_78
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 241
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8541c3011acd541a046aee6c34e44c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_79
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 241
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f66f78ecee20745bb973b27c1550e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_80
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 241
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd9728380234bb4597342cd8b12caf4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_81
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 241
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d92314df720312489c6f3f652bd0bc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_82
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 241
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1024686ecbf9749add9e85c875555b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_83
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 241
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd109931dc2daf4caca48419808bb8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_84
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 241
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122ade4bdaa02634ab41fa67eca62fae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_85
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 241
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26075b8c698f28946a47eeb1f4d92f3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_86
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 241
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24639b9c3d69f249b10fff7a36ace46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_87
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 241
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632c3c2657e07ab49b48bb39d2baa7bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_88
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 241
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7f14532796eb24d8a8adbc2610939d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_89
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 185
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6084f16b7a7197b42971e2b96c206c9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_90
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 185
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37907c718f148a843943c7c060ebda0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_91
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 183
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d5412145124904d8d055ab167cad44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_92
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 183
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3988ccb4dc7ede42a268d9549c1f58f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_93
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 198
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a1e68bed9a2c7479d89c720892eaaf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_94
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 198
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6653ab099e8fc0b4593584fd41def3e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_95
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 198
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b565a4b56e7fae1439f8e5f6622723a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_96
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 183
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a85ef6b9adb8084a804a82125c11aed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_97
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 186
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2138d547f932d49869c4079c244f70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_98
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 138
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08eed2dccac1bf7419fa6c76f9f31512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_99
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 137
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4fa1f862da6084ea8284de80499461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_100
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 110
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3cfd7a9b602474ba3da5ba3813ed71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_101
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 151
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c044588cca9a6b4e92fb795125585a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_102
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 151
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113cb83dfcb35704dbb752d053afe7c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_103
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 151
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd468197e254eac4e84ab44833699876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_104
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 151
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01b3824b89ee244c8dc7421a875aff2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_105
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 80
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e6ebfd2347f7e4daaa635bf691c645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_106
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f7ab284407e6f4c8ec5cf0de39f81d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_107
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 80
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5176b11736adc7b4a94b4f442f28aac4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_108
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 81
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1a8cbb77f1b0d4794b7d0bf14cb92c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_109
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 81
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57d6eb374ebb3043bf5d03bb7c7f734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_110
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 81
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b468dddc418a7b48bf48a6dc8342ea5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_111
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 110
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbdd4fd9ec6e79b48801ea9a8087d4f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_112
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 110
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ca2564e27ab0642ac0b0a06eecfdfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_113
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 110
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441fad1300dc68c4d8f61b5e2b4b355d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_114
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 110
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b4ac188ec2ed040a6516bb574fb11b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_115
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 110
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc0d7088090a1448b36c05e25df04f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_116
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 80
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdc0673780da4d4ab87edd23981329b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_117
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 80
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15e8dd0b1b798449af43bdc3c4a4a72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_118
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 80
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2e82cb3b7da634eb55f7cdd284d5dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_119
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 80
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a614e43b559f84b80551a2d20f2d83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_120
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 80
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ac978575a2fff4ab21d22420372e8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_121
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 67
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975a029c3ef66424d80396b4b8c42e76
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ness_custom_sprite_sheet__w_i_p__by_synchroprodigy4300-dagcqa6_122
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 406
+        width: 297
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e3e4625c4e37545b4f5b64a7a39ccb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ccc4dd00c60d2c44aadc8b97b2af38b2
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
