@@ -32,6 +32,8 @@ public class CharacterController2D : MonoBehaviour
 
     public UnityEvent OnLandEvent;
 
+    public UnityEvent OnLaunchEvent; //launched in the area due to some means i.e spring
+
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
 
@@ -45,13 +47,21 @@ public class CharacterController2D : MonoBehaviour
         if (OnLandEvent == null)
             OnLandEvent = new UnityEvent();
 
+        if (OnLaunchEvent == null)
+            OnLaunchEvent = new UnityEvent();
+
         if (OnCrouchEvent == null)
             OnCrouchEvent = new BoolEvent();
     }
 
+    private void Start()
+    {
+        gravity = m_Rigidbody2D.gravityScale;
+    }
+
     private void FixedUpdate()
     {
-        bool wasGrounded = m_Grounded;
+        //bool wasGrounded = m_Grounded;
         m_Grounded = false;
 
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
@@ -201,35 +211,37 @@ public class CharacterController2D : MonoBehaviour
 
     private void WallJump(int dir)
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(MAXSPEED * dir, .9f * JUMPSPEED);
+        m_Rigidbody2D.velocity = new Vector2(MAXSPEED * dir, .9f * JUMPSPEED);
     }
 
     private void Stop()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-        GetComponent<Rigidbody2D>().gravityScale = 0;
+        m_Rigidbody2D.velocity = new Vector2(0, 0);
+        m_Rigidbody2D.gravityScale = 0;
     }
 
+    Vector3 straightUp = new Vector3(0, 0.52f, 0);
     public void SpringCollision(GMScript.Springer sprop)
     {   //called when player collides with spring from spring script
         //springs launch you pretty hard
         //rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, JUMPSPEED * sprop.intensity);
-        transform.position = sprop.elRay.origin; //move to center of spring so that you can hit it from any side and get the same effect
+        transform.position = sprop.elRay.origin + straightUp; //move to center of spring so that you can hit it from any side and get the same effect
         float mag = JUMPSPEED * sprop.intensity; //combine ray's direction with player speed default. differentiate between spring and big spring with intensity
         float dirx = sprop.elRay.direction.x;
         float diry = sprop.elRay.direction.y;
         if (Mathf.Abs(dirx) != Mathf.Abs(diry))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(dirx * MAXSPEED, diry * mag);
+            m_Rigidbody2D.velocity = new Vector2(dirx * MAXSPEED, diry * mag);
         }
         else
         { //want the 45 degree angle spring to have more horizontal power
-            GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Sign(dirx) * MAXSPEED, diry * mag);
+            m_Rigidbody2D.velocity = new Vector2(Mathf.Sign(dirx) * MAXSPEED, diry * mag);
         }
         if (!GMScript.state.Equals(GMScript.Context.dead))
         {
             GMScript.state = GMScript.Context.normal; //just in case you zipline into the teleporter, don't want to be stuck in that state
         }
+        OnLaunchEvent.Invoke();
     }
 
     public void SRTACollision(Transform teleportTo)
@@ -247,8 +259,8 @@ public class CharacterController2D : MonoBehaviour
         GMScript.state = GMScript.Context.zipping;
         transform.position = attachto.position;
         Vector2 jVel = new Vector2(MAXSPEED * Mathf.Cos(-0.174532925f), MAXSPEED * Mathf.Sin(-0.174532925f));
-        GetComponent<Rigidbody2D>().velocity = jVel;
-        GetComponent<Rigidbody2D>().gravityScale = 0;
+        m_Rigidbody2D.velocity = jVel;
+        m_Rigidbody2D.gravityScale = 0;
         Invoke("ZipJump", 4.4f); //after 4.2 seconds (based on zipline length), you have reached the end of the zipline if you are still on it
 
     }
@@ -257,10 +269,11 @@ public class CharacterController2D : MonoBehaviour
     {
         if (GMScript.state.Equals(GMScript.Context.zipping))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(MAXSPEED, GetComponent<Rigidbody2D>().velocity.y);
+            m_Rigidbody2D.velocity = new Vector2(MAXSPEED, m_Rigidbody2D.velocity.y);
             GMScript.state = GMScript.Context.normal;
-            GetComponent<Rigidbody2D>().gravityScale = gravity;
+            m_Rigidbody2D.gravityScale = gravity;
         }
+        OnLaunchEvent.Invoke();
     }
 
 
@@ -283,10 +296,10 @@ public class CharacterController2D : MonoBehaviour
     public void RingCollision(Transform ringTransform)
     {
         GMScript.state = GMScript.Context.ringing;
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        m_Rigidbody2D.velocity = new Vector2(0, 0);
         transform.position = ringTransform.position;
-        GetComponent<Rigidbody2D>().gravityScale = 0;
-
+        m_Rigidbody2D.gravityScale = 0;
+        OnLaunchEvent.Invoke();
     }
 
     public void WindCollision(Transform lol)
@@ -294,7 +307,7 @@ public class CharacterController2D : MonoBehaviour
         //rigidbody2D.AddForce(new Vector2(0,.1f));	
         //if (rigidbody2D.velocity.y > 9)
         //{
-        GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, 6f);
+        m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 6f);
         //float x = (transform.position.y - lol.position.y);
         //x /= 3200;
         //x /= 999.75f;

@@ -23,7 +23,8 @@ public class Spring : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter2D(Collision2D collInfo)
+	//void OnCollisionEnter2D(Collision2D collInfo) //makes more sense to use a trigger
+    void OnTriggerEnter2D(Collider2D collInfo)
 	{ //if the spring collides with a player, then that's the only time you want 
 	  //the player's spring collision method to be called.
 		if (collInfo.gameObject.tag == "Player")

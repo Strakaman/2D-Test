@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 5.23, z: 0}
+  m_LocalPosition: {x: 12.6, y: 22.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4856848004828218}
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 4097
+    m_Bits: 4096
   m_GroundCheck: {fileID: 4671237398462730}
   m_CeilingCheck: {fileID: 4147883678402904}
   m_CrouchDisableCollider: {fileID: 0}
@@ -238,6 +238,22 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114872194693529430}
         m_MethodName: OnLanded
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnLaunchEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114872194693529430}
+        m_MethodName: OnLaunched
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -312,8 +328,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1783731295
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: e5588b0ae6eb79e4f846fa68b5d2da84, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

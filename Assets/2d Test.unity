@@ -383,13 +383,13 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 825141b179b4b4a4ca724280b3dbc254, type: 2}
-      propertyPath: m_Name
-      value: Spring2
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 825141b179b4b4a4ca724280b3dbc254, type: 2}
       propertyPath: m_RootOrder
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 825141b179b4b4a4ca724280b3dbc254, type: 2}
+      propertyPath: m_Name
+      value: Spring2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 825141b179b4b4a4ca724280b3dbc254, type: 2}
@@ -1516,7 +1516,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: faf91c89542a7ef4d94de889673135fa, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4.505276
+      value: 4.73
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: faf91c89542a7ef4d94de889673135fa, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1538,10 +1538,6 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: faf91c89542a7ef4d94de889673135fa, type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: fbae729bb763832479ca78ba7a8a20c3, type: 2}
     - target: {fileID: 400000, guid: faf91c89542a7ef4d94de889673135fa, type: 2}
       propertyPath: m_RootOrder
       value: 3

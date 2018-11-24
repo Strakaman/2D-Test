@@ -9,13 +9,13 @@ public class PlayerMovementInput : MonoBehaviour
     public Animator animator;
     public float runSpeed = 40f;
     float horizontalMove = 0f;
-    Rigidbody2D rigidbody2D;
+    Rigidbody2D m_rigidbody2D;
 
     bool jump = false;
 
     private void OnEnable()
     {
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        m_rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class PlayerMovementInput : MonoBehaviour
             // CmdSetJumpVal(true);
         }
         animator.SetFloat("HVel", Mathf.Abs(horizontalMove));
-        animator.SetFloat("YVel", rigidbody2D.velocity.y);
+        animator.SetFloat("YVel", m_rigidbody2D.velocity.y);
         animator.SetBool("Jump", jump);
     }
 
@@ -38,6 +38,12 @@ public class PlayerMovementInput : MonoBehaviour
     {
         Debug.Log("somehow hit");
         jump = false;
+    }
+
+    public void OnLaunched()
+    {
+        Debug.Log("shoulda fucking debugged this");
+        jump = true;
     }
 
     void FixedUpdate()
