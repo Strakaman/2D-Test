@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,6 +13,7 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings
     [SerializeField] private Collider2D m_CrouchDisableCollider;                // A collider that will be disabled when crouching
 
+    public Animator animator;
     const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
     private bool m_Grounded;            // Whether or not the player is grounded.
     const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
@@ -23,7 +25,7 @@ public class CharacterController2D : MonoBehaviour
     private Vector3 s; //box collider size to help with raycasting
     private Vector3 c; //box collider center to help with raycasting
 
-    private const float MAXSPEED = 10;
+    private const float MAXSPEED = 50;
     private const float JUMPSPEED = 20;
     private float gravity; //gravity sometimes removed for certain physics, need to be able to get it back
 
@@ -72,8 +74,8 @@ public class CharacterController2D : MonoBehaviour
             if (colliders[i].gameObject != gameObject)
             {
                 m_Grounded = true;
-               /* if (!wasGrounded)
-                    OnLandEvent.Invoke();*/
+                /* if (!wasGrounded)
+                     OnLandEvent.Invoke();*/
             }
         }
     }
@@ -98,11 +100,24 @@ public class CharacterController2D : MonoBehaviour
             EvalFlipSituation(move);
         }
         // If the player should jump...
-        if (m_Grounded && jump)
+        if (jump)
         {
-            // Add a vertical force to the player.
-            m_Grounded = false;
-            m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+            if (m_Grounded)
+            {
+                // Add a vertical force to the player.
+                animator.SetBool("Jump", true);
+                m_Grounded = false;
+                m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+            }
+            else if (GMScript.state.Equals(GMScript.Context.zipping))
+            {
+                Debug.Log("here");
+                ZipJump();
+            }
+            else if (GMScript.state.Equals(GMScript.Context.ringing))
+            {
+                RingJump(move);
+            }
         }
     }
 
@@ -122,6 +137,7 @@ public class CharacterController2D : MonoBehaviour
             // If the character has a ceiling preventing them from standing up, keep them crouching
             if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
             {
+                Debug.LogWarning(Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround).name);
                 crouch = true;
             }
         }
@@ -221,27 +237,28 @@ public class CharacterController2D : MonoBehaviour
     }
 
     Vector3 straightUp = new Vector3(0, 0.52f, 0);
+
     public void SpringCollision(GMScript.Springer sprop)
     {   //called when player collides with spring from spring script
         //springs launch you pretty hard
-        //rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, JUMPSPEED * sprop.intensity);
         transform.position = sprop.elRay.origin + straightUp; //move to center of spring so that you can hit it from any side and get the same effect
-        float mag = JUMPSPEED * sprop.intensity; //combine ray's direction with player speed default. differentiate between spring and big spring with intensity
+        float mag = JUMPSPEED * sprop.intensity*.9f; //combine ray's direction with player speed default. differentiate between spring and big spring with intensity
         float dirx = sprop.elRay.direction.x;
         float diry = sprop.elRay.direction.y;
-        if (Mathf.Abs(dirx) != Mathf.Abs(diry))
-        {
-            m_Rigidbody2D.velocity = new Vector2(dirx * MAXSPEED, diry * mag);
-        }
-        else
-        { //want the 45 degree angle spring to have more horizontal power
-            m_Rigidbody2D.velocity = new Vector2(Mathf.Sign(dirx) * MAXSPEED, diry * mag);
-        }
+        m_Rigidbody2D.velocity = new Vector2(dirx * MAXSPEED*.5f, diry * mag);
+        m_AirControl = false;
+        Invoke("RenableXMovement", .75f);
         if (!GMScript.state.Equals(GMScript.Context.dead))
         {
             GMScript.state = GMScript.Context.normal; //just in case you zipline into the teleporter, don't want to be stuck in that state
         }
+        animator.SetBool("Jump", true);
         OnLaunchEvent.Invoke();
+    }
+
+     void RenableXMovement()
+    {
+        m_AirControl = true;
     }
 
     public void SRTACollision(Transform teleportTo)
@@ -256,24 +273,29 @@ public class CharacterController2D : MonoBehaviour
 
     public void ZipCollision(Transform attachto)
     {
+        Debug.Log("zuioidjwoida");
         GMScript.state = GMScript.Context.zipping;
         transform.position = attachto.position;
-        Vector2 jVel = new Vector2(MAXSPEED * Mathf.Cos(-0.174532925f), MAXSPEED * Mathf.Sin(-0.174532925f));
-        m_Rigidbody2D.velocity = jVel;
+        //Vector2 jVel = new Vector2(MAXSPEED * Mathf.Cos(-0.174532925f), MAXSPEED * Mathf.Sin(-0.174532925f));
+        //m_Rigidbody2D.velocity = jVel;
+        m_Rigidbody2D.velocity = new Vector2(0, 0);
         m_Rigidbody2D.gravityScale = 0;
-        Invoke("ZipJump", 4.4f); //after 4.2 seconds (based on zipline length), you have reached the end of the zipline if you are still on it
-
+        //Invoke("ZipJump", 4.4f); //after 4.2 seconds (based on zipline length), you have reached the end of the zipline if you are still on it
+        m_AirControl = false;
     }
 
     public void ZipJump()
     {
         if (GMScript.state.Equals(GMScript.Context.zipping))
         {
-            m_Rigidbody2D.velocity = new Vector2(MAXSPEED, m_Rigidbody2D.velocity.y);
+            m_Rigidbody2D.velocity = new Vector2(.75f*MAXSPEED, 0);
             GMScript.state = GMScript.Context.normal;
             m_Rigidbody2D.gravityScale = gravity;
+            //m_AirControl = true;
+            transform.parent = null;
+            Invoke("RenableXMovement", .50f);
+            OnLaunchEvent.Invoke();
         }
-        OnLaunchEvent.Invoke();
     }
 
 
@@ -297,8 +319,20 @@ public class CharacterController2D : MonoBehaviour
     {
         GMScript.state = GMScript.Context.ringing;
         m_Rigidbody2D.velocity = new Vector2(0, 0);
+        m_AirControl = false;
         transform.position = ringTransform.position;
         m_Rigidbody2D.gravityScale = 0;
+        OnLandEvent.Invoke();//not really  land event but TODO: make new event?
+    }
+
+    private void RingJump(float move)
+    {
+        m_AirControl = true;
+        m_Rigidbody2D.gravityScale = gravity;
+        m_Rigidbody2D.velocity = new Vector2(Mathf.Sign(move) * MAXSPEED * .2f, 0);
+        m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+        GMScript.state = GMScript.Context.normal;
+        animator.SetBool("Jump", true);
         OnLaunchEvent.Invoke();
     }
 
@@ -307,6 +341,7 @@ public class CharacterController2D : MonoBehaviour
         //rigidbody2D.AddForce(new Vector2(0,.1f));	
         //if (rigidbody2D.velocity.y > 9)
         //{
+        animator.SetBool("Jump", true);
         m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 6f);
         //float x = (transform.position.y - lol.position.y);
         //x /= 3200;
@@ -321,6 +356,7 @@ public class CharacterController2D : MonoBehaviour
     {
         bool wasGrounded = m_Grounded;
         m_Grounded = true;
+        animator.SetBool("Jump", false);
         if (!wasGrounded)
             OnLandEvent.Invoke();
     }

@@ -6,46 +6,48 @@ public class Hover : MonoBehaviour {
 	private int dir = 1; //used for alternating between forward and backwards
 	public Vector2 v2; //set whether horizontal or vertical moving platform
 	private float totaldelay; //after a certain period of time, reverse direction of hover
-	// Use this for initialization
-	void Start () {
-		GetComponent<Rigidbody2D>().velocity = CalV();
-	}
 
-	Vector2 CalV()
-	{
-		return new Vector2 (VELOCITY * v2.x * dir, VELOCITY * v2.y * dir);
-	}
-	// Update is called once per frame
-	void Update () {
-		totaldelay += Time.deltaTime;
-		if (totaldelay > 7)
-		{
-			dir *= -1;
-			GetComponent<Rigidbody2D>().velocity = CalV();
-			totaldelay = 0;
-		}
-		else if (totaldelay > 5)
-		{
-			GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
-		}
-		/*if ((totaldelay > 5) && (rigidbody2D.velocity != new Vector2(0,0)))
-		{
-			oldv = rigidbody2D.velocity;
-			rigidbody2D.velocity = new Vector2(0,0);
-		}
-		else if (totaldelay > 7)
-		{
-			rigidbody2D.velocity = oldv * -1;
-			totaldelay = 0;
-		}*/
-	}
-	/* don't use
-	void OnCollisionEnter2D(Collision2D collInfo)
-	{ //if the spring collides with a player, then that's the only time you want 
-		//the player's spring collision method to be called.
+    private void FixedUpdate()
+    {
+        //3 stages to movement, move in dir v2, stop, then move in reverse v2 direction
+        totaldelay += Time.fixedDeltaTime;
+        if (totaldelay > 7)
+        {
+            dir *= -1;
+            transform.position += CalPosChange();
+            totaldelay = 0;
+        }
+        else if (totaldelay < 5)
+        {
+            transform.position += CalPosChange();
+        }
+    }
+
+    Vector3 CalPosChange()
+    {
+        return new Vector3(VELOCITY * v2.x * dir*Time.fixedDeltaTime, VELOCITY * v2.y * dir*Time.fixedDeltaTime,0);
+    }
+
+    /// <summary>
+    /// Colliding with the player sets the player to be a child of this object. This allows for any positional
+    /// change to automatically be registered  as a change for the player too, so that player will move with the platform.
+    /// This is to solve issue where player was sliding off of moving platforms
+    /// </summary>
+    /// <param name="collInfo"></param>
+    void OnCollisionEnter2D(Collision2D collInfo)
+	{ 
 		if (collInfo.gameObject.tag == "Player")
 		{
-			collInfo.gameObject.BroadcastMessage("HoverCollision");
-		}
-	}*/
+            collInfo.transform.parent = transform ;
+        }
+	}
+
+    void OnCollisionExit2D(Collision2D collInfo)
+    { //if the spring collides with a player, then that's the only time you want 
+      //the player's spring collision method to be called.
+        if (collInfo.gameObject.tag == "Player")
+        {
+            collInfo.transform.parent = null;
+        }
+    }
 }

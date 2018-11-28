@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.6, y: 22.6, z: 0}
+  m_LocalPosition: {x: -6.1, y: 47.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4856848004828218}
@@ -191,9 +191,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.6}
+  m_Offset: {x: 0, y: -0.5}
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.45
 --- !u!95 &95544383944119060
 Animator:
   serializedVersion: 3
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019841f32deb94c4eb7b5c577a671d34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 0.06
+  m_JumpForce: 0.12
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -233,6 +233,7 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 4671237398462730}
   m_CeilingCheck: {fileID: 4147883678402904}
   m_CrouchDisableCollider: {fileID: 0}
+  animator: {fileID: 95544383944119060}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls:

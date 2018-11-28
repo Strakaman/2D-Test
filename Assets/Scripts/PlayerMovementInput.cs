@@ -11,7 +11,7 @@ public class PlayerMovementInput : MonoBehaviour
     float horizontalMove = 0f;
     Rigidbody2D m_rigidbody2D;
 
-    bool jump = false;
+    bool jumpInput = false;
 
     private void OnEnable()
     {
@@ -23,33 +23,26 @@ public class PlayerMovementInput : MonoBehaviour
     {
         
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        if (Input.GetButtonDown("Jump"))
-        {
-            Debug.LogWarning("come on man");
-            jump = true;
-            // CmdSetJumpVal(true);
-        }
+        jumpInput = Input.GetButtonDown("Jump");
         animator.SetFloat("HVel", Mathf.Abs(horizontalMove));
         animator.SetFloat("YVel", m_rigidbody2D.velocity.y);
-        animator.SetBool("Jump", jump);
+        //animator.SetBool("Jump", jump);
     }
 
     public void OnLanded()
     {
-        Debug.Log("somehow hit");
-        jump = false;
+        //jump = false;
     }
 
     public void OnLaunched()
     {
-        Debug.Log("shoulda fucking debugged this");
-        jump = true;
+        //jump = true;
     }
 
     void FixedUpdate()
     {
         // Move our character i
-        controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
+        controller.Move(horizontalMove * Time.fixedDeltaTime, false, jumpInput);
     }
 
 }

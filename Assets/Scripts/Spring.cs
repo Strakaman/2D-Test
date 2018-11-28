@@ -4,7 +4,8 @@ using System.Collections;
 public class Spring : MonoBehaviour {
 	public Vector3 dir;
 	private GMScript.Springer sprop; //need to pass a struct to player to get all the properties of the spring, i think
-	// Use this for initialization
+    private Collider2D m_Collider;
+    // Use this for initialization
 	void Start () {
 		Vector3 mag = new Vector3(transform.position.x,transform.position.y,transform.position.z);
 		sprop.elRay = new Ray(mag,dir);
@@ -16,6 +17,7 @@ public class Spring : MonoBehaviour {
 		{
 			sprop.intensity = 3;
 		}
+        m_Collider = GetComponent<Collider2D>();
 	}
 	
 	// Update is called once per frame
@@ -29,7 +31,15 @@ public class Spring : MonoBehaviour {
 	  //the player's spring collision method to be called.
 		if (collInfo.gameObject.tag == "Player")
 		{
+            
 			collInfo.gameObject.BroadcastMessage("SpringCollision",sprop);
 		}
+        m_Collider.enabled = false;
+        Invoke("Renable", .25f);
 	}
+
+    void Renable()
+    {
+        m_Collider.enabled = true;
+    }
 }
