@@ -23,7 +23,7 @@ public class PlayerMovementInput : MonoBehaviour
     {
         
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        jumpInput = Input.GetButtonDown("Jump");
+        if (Input.GetButtonDown("Jump")) { jumpInput = true; }
         animator.SetFloat("HVel", Mathf.Abs(horizontalMove));
         animator.SetFloat("YVel", m_rigidbody2D.velocity.y);
         //animator.SetBool("Jump", jump);
@@ -31,18 +31,38 @@ public class PlayerMovementInput : MonoBehaviour
 
     public void OnLanded()
     {
-        //jump = false;
+        //jumpInput = false;
     }
 
     public void OnLaunched()
     {
-        //jump = true;
+        jumpInput = true;
+    }
+
+    public void OnTurbineCollision()
+    {
+    }
+
+    /// <summary>
+
+    /// </summary>
+    public void OnZipCollision()
+    {
+    }
+
+    public void OnRingCollision()
+    {
     }
 
     void FixedUpdate()
     {
         // Move our character i
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jumpInput);
+
+        ///     these is generally used to reset jump variable when colliding with certain objects
+        ///     You can't rely on update method to set jump back to false since multiple update frames can occur before fixed update
+        ///     i.e. one frame that would set jump to true and the next sets jump back to false. This can result in lost jump button presses
+        jumpInput = false;
     }
 
 }

@@ -22,8 +22,8 @@ public class CharacterController2D : MonoBehaviour
     private Vector3 m_Velocity = Vector3.zero;
 
 
-    private Vector3 s; //box collider size to help with raycasting
-    private Vector3 c; //box collider center to help with raycasting
+    private Vector3 coll_size; //box collider size to help with raycasting
+    private Vector3 coll_center; //box collider center to help with raycasting
 
     private const float MAXSPEED = 50;
     private const float JUMPSPEED = 20;
@@ -35,6 +35,10 @@ public class CharacterController2D : MonoBehaviour
     public UnityEvent OnLandEvent;
 
     public UnityEvent OnLaunchEvent; //launched in the area due to some means i.e spring
+    public UnityEvent OnTurbineCollEvent; //collided with turbine
+    public UnityEvent OnRingCollEvent; //hit grab ring
+    public UnityEvent OnGoalCollEvent; //collided with goal
+    public UnityEvent OnZipCollEvent; //gabbed zipline handle
 
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
@@ -52,6 +56,14 @@ public class CharacterController2D : MonoBehaviour
         if (OnLaunchEvent == null)
             OnLaunchEvent = new UnityEvent();
 
+        if (OnGoalCollEvent == null)
+            OnGoalCollEvent = new UnityEvent();
+        if (OnTurbineCollEvent == null)
+            OnTurbineCollEvent = new UnityEvent();
+        if (OnZipCollEvent == null)
+            OnZipCollEvent = new UnityEvent();
+        if (OnRingCollEvent == null)
+            OnRingCollEvent = new UnityEvent();
         if (OnCrouchEvent == null)
             OnCrouchEvent = new BoolEvent();
     }
@@ -59,6 +71,9 @@ public class CharacterController2D : MonoBehaviour
     private void Start()
     {
         gravity = m_Rigidbody2D.gravityScale;
+        BoxCollider2D zollider = GetComponent<BoxCollider2D>();
+        coll_size = zollider.size;
+        coll_center = zollider.offset;
     }
 
     private void FixedUpdate()
@@ -118,6 +133,15 @@ public class CharacterController2D : MonoBehaviour
             {
                 RingJump(move);
             }
+            else
+            {
+                int direction;
+                if (CanWallJump(out direction))
+                {
+                    WallJump(direction);
+                }
+            }
+                
         }
     }
 
@@ -202,9 +226,9 @@ public class CharacterController2D : MonoBehaviour
         // Check collisions left and right to see if user is next to a wall
         for (int i = 0; i < 3; i++)
         { //use loop to create three rays equally distributed of player
-            float x = p.x + c.x + s.x / 2 * -1; //check the left of the player for a wall first
-            float y = (p.y + c.y - s.y / 2) + s.y / 2 * i; // shoot a ray from the top, middle, and bottom
-            float x2 = x + s.x; //gets other side of player 
+            float x = p.x + coll_center.x + coll_size.x / 2 * -1; //check the left of the player for a wall first
+            float y = (p.y + coll_center.y - coll_size.y / 2) + coll_size.y / 2 * i; // shoot a ray from the top, middle, and bottom
+            float x2 = x + coll_size.x; //gets other side of player 
                                 //Ray ray = new Ray (new Vector3(x,y,0), new Vector3 (-1,0,0)); //create ray and cast it left
                                 //RaycastHit2D hit = Physics2D.Raycast(ray.origin,ray.direction,.1f,9); //.1f to be more or less touching wall
             RaycastHit2D hit = Physics2D.Raycast(new Vector2(x, y), new Vector2(-1, 0), .1f, 9); //check left side for wall jump, then right side
@@ -227,18 +251,21 @@ public class CharacterController2D : MonoBehaviour
 
     private void WallJump(int dir)
     {
-        m_Rigidbody2D.velocity = new Vector2(MAXSPEED * dir, .9f * JUMPSPEED);
+        Flip();
+        m_Rigidbody2D.velocity = new Vector2(.375f*MAXSPEED * dir, .9f * JUMPSPEED);
+        m_AirControl = false;
+        Invoke("RenableXMovement", .25f);
     }
 
     private void Stop()
     {
         m_Rigidbody2D.velocity = new Vector2(0, 0);
-        m_Rigidbody2D.gravityScale = 0;
+        //m_Rigidbody2D.gravityScale = 0;
     }
 
     Vector3 straightUp = new Vector3(0, 0.52f, 0);
 
-    public void SpringCollision(GMScript.Springer sprop)
+    public void SpringCollision(GMScript.Springer sprop) //todo: figure out why jumping on spring and running into spring result in different launches
     {   //called when player collides with spring from spring script
         //springs launch you pretty hard
         transform.position = sprop.elRay.origin + straightUp; //move to center of spring so that you can hit it from any side and get the same effect
@@ -246,8 +273,9 @@ public class CharacterController2D : MonoBehaviour
         float dirx = sprop.elRay.direction.x;
         float diry = sprop.elRay.direction.y;
         m_Rigidbody2D.velocity = new Vector2(dirx * MAXSPEED*.5f, diry * mag);
+        Debug.Log(m_Rigidbody2D.velocity);
         m_AirControl = false;
-        Invoke("RenableXMovement", .75f);
+        Invoke("RenableXMovement", .25f*sprop.intensity); //the more powerful the spring the greater time the user is incapacitated
         if (!GMScript.state.Equals(GMScript.Context.dead))
         {
             GMScript.state = GMScript.Context.normal; //just in case you zipline into the teleporter, don't want to be stuck in that state
@@ -273,7 +301,6 @@ public class CharacterController2D : MonoBehaviour
 
     public void ZipCollision(Transform attachto)
     {
-        Debug.Log("zuioidjwoida");
         GMScript.state = GMScript.Context.zipping;
         transform.position = attachto.position;
         //Vector2 jVel = new Vector2(MAXSPEED * Mathf.Cos(-0.174532925f), MAXSPEED * Mathf.Sin(-0.174532925f));
@@ -282,6 +309,7 @@ public class CharacterController2D : MonoBehaviour
         m_Rigidbody2D.gravityScale = 0;
         //Invoke("ZipJump", 4.4f); //after 4.2 seconds (based on zipline length), you have reached the end of the zipline if you are still on it
         m_AirControl = false;
+        OnZipCollEvent.Invoke();
     }
 
     public void ZipJump()
@@ -307,6 +335,7 @@ public class CharacterController2D : MonoBehaviour
 
     public void GoalCollision()
     {
+        OnGoalCollEvent.Invoke();
         Stop();
     }
 
@@ -322,7 +351,7 @@ public class CharacterController2D : MonoBehaviour
         m_AirControl = false;
         transform.position = ringTransform.position;
         m_Rigidbody2D.gravityScale = 0;
-        OnLandEvent.Invoke();//not really  land event but TODO: make new event?
+        OnRingCollEvent.Invoke();
     }
 
     private void RingJump(float move)
@@ -343,6 +372,7 @@ public class CharacterController2D : MonoBehaviour
         //{
         animator.SetBool("Jump", true);
         m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 6f);
+        OnTurbineCollEvent.Invoke();
         //float x = (transform.position.y - lol.position.y);
         //x /= 3200;
         //x /= 999.75f;

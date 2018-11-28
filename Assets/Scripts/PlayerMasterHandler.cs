@@ -6,9 +6,7 @@ using UnityEngine.Networking;
 public class PlayerMasterHandler : MonoBehaviour
 {
     public PlayerMovementInput inputMovement;
-
-
-
+    public Animator animator;
 
     string pName = "Hayato";
 
@@ -18,13 +16,19 @@ public class PlayerMasterHandler : MonoBehaviour
 
     }
 
-    public void RpcDeactivateYourMovement()
+    void DeactivateYourMovement()
     {
         inputMovement.enabled = false;
     }
 
+    public void OnGoalCollision()
+    {
+        animator.SetBool("Success", true);
+        DeactivateYourMovement();
+    }
+
     public void RpcResetForRematch()
     {
-
+        inputMovement.enabled = true;
     }
 }
