@@ -5,7 +5,7 @@ public class Platforms : MonoBehaviour {
 	private Vector3 s; //box collider size to help with collision checks
 	// Use this for initialization
 	void Start () {
-		BoxCollider2D zollider = GetComponent<BoxCollider2D> ();
+		BoxCollider2D zollider = GetComponentInChildren<BoxCollider2D> ();
 		s = zollider.size;
 	}
 	
