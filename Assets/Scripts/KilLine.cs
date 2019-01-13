@@ -15,9 +15,11 @@ public class KilLine : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collInfo)
 	{
+        Debug.LogWarning("hit kill line");
 		if (collInfo.gameObject.tag == "Player")
 		{
-			collInfo.gameObject.BroadcastMessage("KillLineCollision");
+            Debug.LogWarning("hit kill line 2");
+            collInfo.gameObject.BroadcastMessage("KillLineCollision");
 			GameObject.FindGameObjectWithTag("GM").BroadcastMessage("StageFailed");
 			//broadcast to game master object to stop timer and raise options for next stage
 		}

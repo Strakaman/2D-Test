@@ -38,7 +38,8 @@ public class CharacterController2D : MonoBehaviour
     public UnityEvent OnTurbineCollEvent; //collided with turbine
     public UnityEvent OnRingCollEvent; //hit grab ring
     public UnityEvent OnGoalCollEvent; //collided with goal
-    public UnityEvent OnZipCollEvent; //gabbed zipline handle
+    public UnityEvent OnZipCollEvent; //grabbed zipline handle
+    public UnityEvent OnKillCollEvent; //hit kill line
 
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
@@ -66,6 +67,9 @@ public class CharacterController2D : MonoBehaviour
             OnRingCollEvent = new UnityEvent();
         if (OnCrouchEvent == null)
             OnCrouchEvent = new BoolEvent();
+        if (OnKillCollEvent == null)
+            OnKillCollEvent = new UnityEvent();
+
     }
 
     private void Start()
@@ -342,6 +346,7 @@ public class CharacterController2D : MonoBehaviour
     public void KillLineCollision()
     {
         Stop();
+        OnKillCollEvent.Invoke();
     }
 
     public void RingCollision(Transform ringTransform)

@@ -12,16 +12,20 @@ public class PlayerMovementInput : MonoBehaviour
     Rigidbody2D m_rigidbody2D;
 
     bool jumpInput = false;
+    bool disableMovement = false;
 
     private void OnEnable()
     {
         m_rigidbody2D = GetComponent<Rigidbody2D>();
+        disableMovement = false;
+        animator.SetBool("Dead", false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (disableMovement) { return; }   
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         if (Input.GetButtonDown("Jump")) { jumpInput = true; }
         animator.SetFloat("HVel", Mathf.Abs(horizontalMove));
@@ -52,6 +56,19 @@ public class PlayerMovementInput : MonoBehaviour
 
     public void OnRingCollision()
     {
+    }
+
+    public void OnKillLineCollision()
+    {
+        Die();
+    }
+
+    public void Die()
+    {
+        m_rigidbody2D.gravityScale = 0;
+        disableMovement = true;
+        GMScript.state = GMScript.Context.dead;
+        animator.SetBool("Dead",true);
     }
 
     void FixedUpdate()

@@ -103,7 +103,8 @@ public class GMScript : MonoBehaviour
     void StageFailed()
     {
         StopTimer();
-        state = Context.dead;
+        //state = Context.dead;
+        FindObjectOfType<PlayerMovementInput>().Die();
     }
 
     void NextLevel()

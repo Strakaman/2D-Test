@@ -5,6 +5,9 @@ public class Spring : MonoBehaviour {
 	public Vector3 dir;
 	private GMScript.Springer sprop; //need to pass a struct to player to get all the properties of the spring, i think
     private Collider2D m_Collider;
+    [SerializeField]
+    private Animator animator;
+
     // Use this for initialization
 	void Start () {
 		Vector3 mag = new Vector3(transform.position.x,transform.position.y,transform.position.z);
@@ -35,11 +38,13 @@ public class Spring : MonoBehaviour {
 			collInfo.gameObject.BroadcastMessage("SpringCollision",sprop);
 		}
         m_Collider.enabled = false;
+        animator.SetBool("Hit", true);
         Invoke("Renable", .25f);
 	}
 
     void Renable()
     {
         m_Collider.enabled = true;
+        animator.SetBool("Hit", false);
     }
 }
