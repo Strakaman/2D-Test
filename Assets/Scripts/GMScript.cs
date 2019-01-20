@@ -107,7 +107,7 @@ public class GMScript : MonoBehaviour
         FindObjectOfType<PlayerMovementInput>().Die();
     }
 
-    void NextLevel()
+    public void NextLevel()
     {       //go to the next stage and start the timer for that level
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         //Application.LoadLevel (Application.loadedLevel + 1);
