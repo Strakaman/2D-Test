@@ -32,7 +32,7 @@ public class GMScript : MonoBehaviour
     }
     public static Context state = Context.normal;
     //assume normal context initially, have to store here to allow access both by player and gamemanger
-
+    public static bool paused = false;
     void Start()
     {
         DontDestroyOnLoad(transform.gameObject);
