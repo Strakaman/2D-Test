@@ -39,7 +39,7 @@ public class Spring : MonoBehaviour {
 		}
         m_Collider.enabled = false;
         animator.SetBool("Hit", true);
-        Invoke("Renable", .25f);
+        Invoke("Renable", .75f);
 	}
 
     void Renable()

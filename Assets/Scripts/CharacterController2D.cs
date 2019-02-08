@@ -277,7 +277,7 @@ public class CharacterController2D : MonoBehaviour
         float dirx = sprop.elRay.direction.x;
         float diry = sprop.elRay.direction.y;
         m_Rigidbody2D.velocity = new Vector2(dirx * MAXSPEED*.5f, diry * mag);
-        Debug.Log(m_Rigidbody2D.velocity);
+        Debug.Log("Velocity " +m_Rigidbody2D.velocity);
         m_AirControl = false;
         Invoke("RenableXMovement", .25f*sprop.intensity); //the more powerful the spring the greater time the user is incapacitated
         if (!GMScript.state.Equals(GMScript.Context.dead))

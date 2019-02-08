@@ -40,7 +40,7 @@ public class PlayerMovementInput : MonoBehaviour
 
     public void OnLaunched()
     {
-        jumpInput = true;
+        //jumpInput = true; //not sure why i was setting this to true just because you got launce, maybe an unerased relic from changing the boolean to only track user input?
     }
 
     public void OnTurbineCollision()
