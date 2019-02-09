@@ -8,6 +8,7 @@ public class CharacterController2D : MonoBehaviour
     [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;          // Amount of maxSpeed applied to crouching movement. 1 = 100%
     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;  // How much to smooth out the movement
     [SerializeField] private bool m_AirControl = false;                         // Whether or not a player can steer while jumping;
+    private float m_AirControlCooldown = 0f;                                    //for controls that prevent air movement, set a time when the player can control movement again
     [SerializeField] private LayerMask m_WhatIsGround;                          // A mask determining what is ground to the character
     [SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
     [SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings
@@ -99,6 +100,18 @@ public class CharacterController2D : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (!m_AirControl)
+        {
+            m_AirControlCooldown -= Time.deltaTime;
+            if (m_AirControlCooldown <= 0)
+            {
+                Debug.Log("Resetting air control");
+                m_AirControl = true;
+            }
+        }
+    }
 
     public void Move(float move, bool crouch, bool jump)
     {
@@ -258,7 +271,7 @@ public class CharacterController2D : MonoBehaviour
         Flip();
         m_Rigidbody2D.velocity = new Vector2(.375f*MAXSPEED * dir, .9f * JUMPSPEED);
         m_AirControl = false;
-        Invoke("RenableXMovement", .25f);
+        SetAirControlCooldown(.25f);
     }
 
     private void Stop()
@@ -279,7 +292,7 @@ public class CharacterController2D : MonoBehaviour
         m_Rigidbody2D.velocity = new Vector2(dirx * MAXSPEED*.5f, diry * mag);
         Debug.Log("Velocity " +m_Rigidbody2D.velocity);
         m_AirControl = false;
-        Invoke("RenableXMovement", .25f*sprop.intensity); //the more powerful the spring the greater time the user is incapacitated
+        SetAirControlCooldown(.25f * sprop.intensity); //the more powerful the spring the greater time the user is incapacitated
         if (!GMScript.state.Equals(GMScript.Context.dead))
         {
             GMScript.state = GMScript.Context.normal; //just in case you zipline into the teleporter, don't want to be stuck in that state
@@ -288,10 +301,15 @@ public class CharacterController2D : MonoBehaviour
         OnLaunchEvent.Invoke();
     }
 
-     void RenableXMovement()
-    {
-        m_AirControl = true;
-    }
+    /// <summary>
+    /// Controls the amount of time that has to pass before player can control their air movement again
+    /// This is better than using an invoke because the player may interact with multiple objects that reset the cooldown time
+    /// </summary>
+    /// <param name="coolDownTime"></param>
+     void SetAirControlCooldown(float coolDownTime)
+     {
+         m_AirControlCooldown = coolDownTime;
+     }
 
     public void SRTACollision(Transform teleportTo)
     {
@@ -313,6 +331,7 @@ public class CharacterController2D : MonoBehaviour
         m_Rigidbody2D.gravityScale = 0;
         //Invoke("ZipJump", 4.4f); //after 4.2 seconds (based on zipline length), you have reached the end of the zipline if you are still on it
         m_AirControl = false;
+        SetAirControlCooldown(float.MaxValue); //set to some high number to prevent player from being able to control x-axis movement while on zipline
         OnZipCollEvent.Invoke();
     }
 
@@ -325,7 +344,7 @@ public class CharacterController2D : MonoBehaviour
             m_Rigidbody2D.gravityScale = gravity;
             //m_AirControl = true;
             transform.parent = null;
-            Invoke("RenableXMovement", .50f);
+            SetAirControlCooldown(.5f);
             OnLaunchEvent.Invoke();
         }
     }

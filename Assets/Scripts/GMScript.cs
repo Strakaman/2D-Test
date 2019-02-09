@@ -7,9 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class GMScript : MonoBehaviour
 {
+    public AudioClip[] backgroundMusics;
+    private short numOfBGMs;
     public KeyCode nkey = new KeyCode();
     public KeyCode rkey = new KeyCode();
     private int currLevel; //used to store current level instead of constantly calling application.loadedlevel
+    
     public const int LASTLEVEL = 5; //to prevent loading past last level
     List<Stage> Stages = new List<Stage>(); //hold stages metadata
     public TimerScript timer; //game object is attached to a timer class that calculates and handles remaining time
@@ -36,6 +39,7 @@ public class GMScript : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(transform.gameObject);
+        numOfBGMs = (short)backgroundMusics.Length;
         //timer = GameObject.FindGameObjectWithTag("Timer");
         Stages.Add(new Stage("Title Screen", 0, 100, true, "", false));
         Stages.Add(new Stage("Mom's House", 1, 30, true, "Does she know my life is on the line?"));
@@ -114,6 +118,7 @@ public class GMScript : MonoBehaviour
         currLevel++;
         StartTimer();
         state = Context.normal;
+        AudioManager.instance.PlayMusic(backgroundMusics[currLevel / numOfBGMs]);
     }
 
     void RestartLevel()

@@ -10,7 +10,7 @@ public class AudioManager : MonoBehaviour
     public float masterVolumePercent { get; private set; }
     public float sfxVolumePercent { get; private set; }
     public float musicVolumePercent { get; private set; }
-
+    
     AudioSource _sfx2DSource;
     AudioSource[] _musicSources;
     int _activeMusicSourceIndex;
@@ -20,6 +20,10 @@ public class AudioManager : MonoBehaviour
     Transform _audioListener;
 
     SoundLibrary _library;
+
+    void Start()
+    {
+    }
 
     void Awake()
     {
@@ -51,7 +55,7 @@ public class AudioManager : MonoBehaviour
 
             masterVolumePercent = PlayerPrefs.GetFloat("master vol", 1);
             sfxVolumePercent = PlayerPrefs.GetFloat("sfx vol", 1);
-            musicVolumePercent = PlayerPrefs.GetFloat("music vol", 1);
+            musicVolumePercent = PlayerPrefs.GetFloat("music vol", .5f);
         }
     }
 

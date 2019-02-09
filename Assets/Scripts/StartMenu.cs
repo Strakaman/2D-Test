@@ -3,9 +3,10 @@ using System.Collections;
 
 public class StartMenu : MonoBehaviour {
 
+    public AudioClip mainMenuBGM;
 	// Use this for initialization
 	void Start () {
-	
+        AudioManager.instance.PlayMusic(mainMenuBGM);
 	}
 	
 	// Update is called once per frame
