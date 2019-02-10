@@ -370,9 +370,11 @@ public class CharacterController2D : MonoBehaviour
 
     public void RingCollision(Transform ringTransform)
     {
+        // user should lose x-axis movement as long as they are on attached to ring
         GMScript.state = GMScript.Context.ringing;
         m_Rigidbody2D.velocity = new Vector2(0, 0);
         m_AirControl = false;
+        SetAirControlCooldown(float.MaxValue); //set high to prevent accidental re-granting of air control
         transform.position = ringTransform.position;
         m_Rigidbody2D.gravityScale = 0;
         OnRingCollEvent.Invoke();

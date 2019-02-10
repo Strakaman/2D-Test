@@ -119,6 +119,7 @@ public class GMScript : MonoBehaviour
         StartTimer();
         state = Context.normal;
         AudioManager.instance.PlayMusic(backgroundMusics[currLevel / numOfBGMs]);
+        UIController.instance.LevelChanged(currLevel, Stages[currLevel].levelName());
     }
 
     void RestartLevel()
@@ -133,10 +134,10 @@ public class GMScript : MonoBehaviour
     {
         if (Stages[currLevel].RealStage())
         {
-            GUI.Label(new Rect(400.0f, 0.0f, 100.0f, 75.0f), Stages[currLevel].levelName() + "");
-            GUI.Label(new Rect(400.0f, 20.0f, 500.0f, 75.0f), Stages[currLevel].levelDesc() + "");
-            ;
-            timer.OnGUI(); //call timer's on gui also
+            //GUI.Label(new Rect(400.0f, 0.0f, 100.0f, 75.0f), Stages[currLevel].levelName() + "");
+            //GUI.Label(new Rect(400.0f, 20.0f, 500.0f, 75.0f), Stages[currLevel].levelDesc() + "");
+            
+            timer.UpdateTime(); //call timer's on gui also
         }
     }
 
@@ -163,7 +164,7 @@ public class GMScript : MonoBehaviour
             startTime = Time.time;
         }
 
-        public void OnGUI()
+        public void UpdateTime()
         {
             if (!stopTime)
                 Timeleft = Time.time - startTime;
@@ -192,7 +193,8 @@ public class GMScript : MonoBehaviour
             }
             if (drawTime)
             {
-                GUI.Label(new Rect(750.0f, 0.0f, 100.0f, 75.0f), timetext);
+                UIController.instance.UpdateTimeLabel(timetext);
+                //GUI.Label(new Rect(750.0f, 0.0f, 100.0f, 75.0f), timetext);
             }
         }
 
