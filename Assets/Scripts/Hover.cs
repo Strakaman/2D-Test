@@ -5,10 +5,12 @@ public class Hover : MonoBehaviour {
 	private const float VELOCITY = 5;
 	private int dir = 1; //used for alternating between forward and backwards
 	public Vector2 v2; //set whether horizontal or vertical moving platform
-	private float totaldelay; //after a certain period of time, reverse direction of hover
+    public bool waitForPlayerFirstTime = false;
+    private float totaldelay; //after a certain period of time, reverse direction of hover
 
     private void FixedUpdate()
     {
+        if (waitForPlayerFirstTime) { return; }
         //3 stages to movement, move in dir v2, stop, then move in reverse v2 direction
         totaldelay += Time.fixedDeltaTime;
         if (totaldelay > 7)
@@ -35,7 +37,8 @@ public class Hover : MonoBehaviour {
     /// </summary>
     /// <param name="collInfo"></param>
     void OnCollisionEnter2D(Collision2D collInfo)
-	{ 
+	{
+        waitForPlayerFirstTime = false;
 		if (collInfo.gameObject.tag == "Player")
 		{
             collInfo.transform.parent = transform ;

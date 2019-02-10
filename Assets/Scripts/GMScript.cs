@@ -20,7 +20,7 @@ public class GMScript : MonoBehaviour
     public struct Springer //used for spring so that spring properties can be passed to player spring collision function
     {
         public Ray elRay;
-        public int intensity;
+        public float intensity;
     }
 
     public enum Context //used to determine if player can perform certain actions and the properties of those actions
