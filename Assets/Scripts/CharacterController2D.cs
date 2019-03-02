@@ -346,6 +346,7 @@ public class CharacterController2D : MonoBehaviour
             transform.parent = null;
             SetAirControlCooldown(.5f);
             OnLaunchEvent.Invoke();
+            animator.SetBool("Suspended", false);
         }
     }
 
@@ -388,6 +389,7 @@ public class CharacterController2D : MonoBehaviour
         m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
         GMScript.state = GMScript.Context.normal;
         animator.SetBool("Jump", true);
+        animator.SetBool("Suspended", false);
         OnLaunchEvent.Invoke();
     }
 

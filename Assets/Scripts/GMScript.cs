@@ -47,6 +47,8 @@ public class GMScript : MonoBehaviour
         Stages.Add(new Stage("Guardian Angel's", 3, 30, false, "Talk about a leap of faith."));
         Stages.Add(new Stage("The Jetsons", 4, 45, false, "I hate sky deliveries."));
         Stages.Add(new Stage("Bouncy Bill's", 5, 30, false, "Used to love coming here as a kid."));
+        Stages.Add(new Stage("Down and Up", 6, 30, false, "To lose is to gain..."));
+        Stages.Add(new Stage("The Climb To Freedom", 6, 30, false, "Use everything you learned to escape!"));
         currLevel = 0;
         timer = new TimerScript();
     }

@@ -52,10 +52,12 @@ public class PlayerMovementInput : MonoBehaviour
     /// </summary>
     public void OnZipCollision()
     {
+        animator.SetBool("Suspended", true);
     }
 
     public void OnRingCollision()
     {
+        animator.SetBool("Suspended", true);
     }
 
     public void OnKillLineCollision()
