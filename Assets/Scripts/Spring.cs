@@ -20,7 +20,7 @@ public class Spring : MonoBehaviour {
 		{
 			sprop.intensity = 3;
 		}
-        if (dir.x == dir.y)
+        if (Mathf.Abs(dir.x) == Mathf.Abs(dir.y))
         {
             sprop.intensity *= 1.5f; //for some reason when the springs are diagonal, their power is diminished. TODO: proper vector math to figure out why this is happening
         }

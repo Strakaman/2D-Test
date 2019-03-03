@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 4548854242830746}
   - component: {fileID: 212975635124773894}
   - component: {fileID: 95132730670852972}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: HoveringSupportSpr1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: 4913056258247852}
   - component: {fileID: 212569442170987904}
   - component: {fileID: 95103642185093998}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: HoveringSupportSpr1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 4454998334253568}
   - component: {fileID: 212792074353531058}
   - component: {fileID: 95059927213039316}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: HoveringSupportSpr1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4126122937483030}
   - component: {fileID: 212397939069381354}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Plat (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 61514318812506800}
   - component: {fileID: 50228826238644098}
   - component: {fileID: 114671384667178092}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Vanishing Platforms2018
   m_TagString: VPlatform
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4204336743034926}
   - component: {fileID: 212064724302203862}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Plat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 4211693020130622}
   - component: {fileID: 212376310038467034}
   - component: {fileID: 95938776333300234}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: HoveringSupportSpr1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

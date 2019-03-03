@@ -14,10 +14,8 @@ public class UIController : MonoBehaviour
 
     void Awake()
     {
-
         if (instance != null)
         {
-            Debug.Log("am i hitting this");
             Destroy(gameObject);
         }
         else

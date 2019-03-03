@@ -314,6 +314,7 @@ public class CharacterController2D : MonoBehaviour
     public void SRTACollision(Transform teleportTo)
     {
         transform.position = teleportTo.position;
+        m_Rigidbody2D.velocity = Vector2.zero;
         if (!GMScript.state.Equals(GMScript.Context.dead))
         {
             GMScript.state = GMScript.Context.normal; //just in case you zipline into the teleporter, don't want to be stuck in that state
