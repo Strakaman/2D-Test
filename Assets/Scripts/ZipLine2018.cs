@@ -32,8 +32,11 @@ public class ZipLine2018 : MonoBehaviour {
         elapsedTime = 0;
         while (elapsedTime < zipTime)
         {
-            transform.position =  Vector3.Lerp(startPosition.position, endPosition.position, (elapsedTime/zipTime));
-            elapsedTime += .01f;
+            if (!GMScript.paused)
+            {
+                transform.position = Vector3.Lerp(startPosition.position, endPosition.position, (elapsedTime / zipTime));
+                elapsedTime += .01f;
+            }
             yield return new WaitForSeconds(.01f);
         }
 

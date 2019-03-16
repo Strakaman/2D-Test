@@ -8,7 +8,7 @@ public class PlayerMasterHandler : MonoBehaviour
     public PlayerMovementInput inputMovement;
     public Animator animator;
 
-    string pName = "Hayato";
+    //string pName = "Hayato";
 
 
     public void GameOver()

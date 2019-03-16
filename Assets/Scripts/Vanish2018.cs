@@ -19,7 +19,7 @@ public class Vanish2018 : MonoBehaviour
     IEnumerator VanishLoop()
     {
         yield return new WaitForSeconds(InitialVanishDelay);
-        while (!GMScript.state.Equals(GMScript.Context.dead))
+        while (!GMScript.instance.state.Equals(GMScript.Context.dead))
         {
             timeTracker = 0f; //reset time since last vanish
             //fade out

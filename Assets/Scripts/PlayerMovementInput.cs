@@ -25,6 +25,7 @@ public class PlayerMovementInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GMScript.paused) { return; }
         if (disableMovement) { return; }   
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         if (Input.GetButtonDown("Jump")) { jumpInput = true; }
@@ -62,19 +63,20 @@ public class PlayerMovementInput : MonoBehaviour
 
     public void OnKillLineCollision()
     {
-        Die();
+        GMScript.instance.StageFailed();
     }
 
     public void Die()
     {
         m_rigidbody2D.gravityScale = 0;
         disableMovement = true;
-        GMScript.state = GMScript.Context.dead;
+        GMScript.instance.state = GMScript.Context.dead;
         animator.SetBool("Dead",true);
     }
 
     void FixedUpdate()
     {
+        if (GMScript.paused) { return; }
         // Move our character i
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jumpInput);
 
