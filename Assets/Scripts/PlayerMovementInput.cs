@@ -70,7 +70,7 @@ public class PlayerMovementInput : MonoBehaviour
     {
         m_rigidbody2D.gravityScale = 0;
         disableMovement = true;
-        GMScript.instance.state = GMScript.Context.dead;
+        GMScript.state = GMScript.Context.dead;
         animator.SetBool("Dead",true);
     }
 

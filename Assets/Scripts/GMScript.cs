@@ -42,7 +42,7 @@ public class GMScript : MonoBehaviour
     public static UnityEvent OnStageClear = new UnityEvent();
     public static GMScript instance;
 
-    public Context state = Context.notstarted;
+    public static Context state = Context.notstarted;
     //assume normal context initially, have to store here to allow access both by player and gamemanger
     public static bool paused = false;
     void Start()

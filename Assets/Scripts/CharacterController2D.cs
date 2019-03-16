@@ -144,12 +144,12 @@ public class CharacterController2D : MonoBehaviour
                 m_Grounded = false;
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             }
-            else if (GMScript.instance.state.Equals(GMScript.Context.zipping))
+            else if (GMScript.state.Equals(GMScript.Context.zipping))
             {
                 Debug.Log("here");
                 ZipJump();
             }
-            else if (GMScript.instance.state.Equals(GMScript.Context.ringing))
+            else if (GMScript.state.Equals(GMScript.Context.ringing))
             {
                 RingJump(move);
             }
@@ -296,9 +296,9 @@ public class CharacterController2D : MonoBehaviour
         Debug.Log("Velocity " +m_Rigidbody2D.velocity);
         m_AirControl = false;
         SetAirControlCooldown(.25f * sprop.intensity); //the more powerful the spring the greater time the user is incapacitated
-        if (!GMScript.instance.state.Equals(GMScript.Context.dead))
+        if (!GMScript.state.Equals(GMScript.Context.dead))
         {
-            GMScript.instance.state = GMScript.Context.normal; //just in case you zipline into the teleporter, don't want to be stuck in that state
+            GMScript.state = GMScript.Context.normal; //just in case you zipline into the teleporter, don't want to be stuck in that state
         }
         animator.SetBool("Jump", true);
         OnLaunchEvent.Invoke();
@@ -318,16 +318,16 @@ public class CharacterController2D : MonoBehaviour
     {
         transform.position = teleportTo.position;
         m_Rigidbody2D.velocity = Vector2.zero;
-        if (!GMScript.instance.state.Equals(GMScript.Context.dead))
+        if (!GMScript.state.Equals(GMScript.Context.dead))
         {
-            GMScript.instance.state = GMScript.Context.normal; //just in case you zipline into the teleporter, don't want to be stuck in that state
+            GMScript.state = GMScript.Context.normal; //just in case you zipline into the teleporter, don't want to be stuck in that state
         }
         //just go to whereever
     }
 
     public void ZipCollision(Transform attachto)
     {
-        GMScript.instance.state = GMScript.Context.zipping;
+        GMScript.state = GMScript.Context.zipping;
         transform.position = attachto.position;
         //Vector2 jVel = new Vector2(MAXSPEED * Mathf.Cos(-0.174532925f), MAXSPEED * Mathf.Sin(-0.174532925f));
         //m_Rigidbody2D.velocity = jVel;
@@ -341,10 +341,10 @@ public class CharacterController2D : MonoBehaviour
 
     public void ZipJump()
     {
-        if (GMScript.instance.state.Equals(GMScript.Context.zipping))
+        if (GMScript.state.Equals(GMScript.Context.zipping))
         {
             m_Rigidbody2D.velocity = new Vector2(.75f*MAXSPEED, 0);
-            GMScript.instance.state = GMScript.Context.normal;
+            GMScript.state = GMScript.Context.normal;
             m_Rigidbody2D.gravityScale = gravity;
             //m_AirControl = true;
             transform.parent = null;
@@ -376,7 +376,7 @@ public class CharacterController2D : MonoBehaviour
     public void RingCollision(Transform ringTransform)
     {
         // user should lose x-axis movement as long as they are on attached to ring
-        GMScript.instance.state = GMScript.Context.ringing;
+        GMScript.state = GMScript.Context.ringing;
         m_Rigidbody2D.velocity = new Vector2(0, 0);
         m_AirControl = false;
         SetAirControlCooldown(float.MaxValue); //set high to prevent accidental re-granting of air control
@@ -391,7 +391,7 @@ public class CharacterController2D : MonoBehaviour
         m_Rigidbody2D.gravityScale = gravity;
         m_Rigidbody2D.velocity = new Vector2(Mathf.Sign(move) * MAXSPEED * .2f, 0);
         m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-        GMScript.instance.state = GMScript.Context.normal;
+        GMScript.state = GMScript.Context.normal;
         animator.SetBool("Jump", true);
         animator.SetBool("Suspended", false);
         OnLaunchEvent.Invoke();

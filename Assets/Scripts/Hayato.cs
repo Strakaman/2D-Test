@@ -49,7 +49,7 @@ public class Hayato : MonoBehaviour
 			}
 			if (Input.GetKeyDown (upKey)) { 
 			int direction;
-            if (GMScript.instance.state.Equals(GMScript.Context.normal))
+            if (GMScript.state.Equals(GMScript.Context.normal))
             {
 						if (grounded){
 							Jump ();
@@ -57,15 +57,15 @@ public class Hayato : MonoBehaviour
 							WallJump(direction);
 						}
             }
-            else if (GMScript.instance.state.Equals(GMScript.Context.zipping))
+            else if (GMScript.state.Equals(GMScript.Context.zipping))
             {
 						ZipJump();
             }
-            else if (GMScript.instance.state.Equals(GMScript.Context.ringing))
+            else if (GMScript.state.Equals(GMScript.Context.ringing))
             {
 							GetComponent<Rigidbody2D>().gravityScale = gravity;
 							Jump();
-                            GMScript.instance.state = GMScript.Context.normal;
+                            GMScript.state = GMScript.Context.normal;
 							if (Input.GetKey(rightKey))
 							{
 								GetComponent<Rigidbody2D>().velocity = new Vector2 (MAXSPEED/5, GetComponent<Rigidbody2D>().velocity.y);
@@ -77,12 +77,12 @@ public class Hayato : MonoBehaviour
 					}		
 			}
 			//only really call this if user has pressed the button and is in a normal/wall state
-            if ((Input.GetKey(rightKey)) && ((int)GMScript.instance.state < 3))
+            if ((Input.GetKey(rightKey)) && ((int)GMScript.state < 3))
             {
 					CalcHVeloctity (Mathf.Sign (1));
 					// oldspeed code rigidbody2D.velocity = new Vector2 (HSPEED, rigidbody2D.velocity.y); 
             }
-            else if ((Input.GetKey(leftKey)) && ((int)GMScript.instance.state < 3))
+            else if ((Input.GetKey(leftKey)) && ((int)GMScript.state < 3))
             { 
 					//else if, don't need to check left key if right key is being pressed
 					CalcHVeloctity (Mathf.Sign (-1));
@@ -158,25 +158,25 @@ public class Hayato : MonoBehaviour
 			GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Sign(dirx) * MAXSPEED, diry * mag);
 		}	
 			UnGroundSelf();
-            if (!GMScript.instance.state.Equals(GMScript.Context.dead))
+            if (!GMScript.state.Equals(GMScript.Context.dead))
 		{
-            GMScript.instance.state = GMScript.Context.normal; //just in case you zipline into the teleporter, don't want to be stuck in that state
+            GMScript.state = GMScript.Context.normal; //just in case you zipline into the teleporter, don't want to be stuck in that state
 		}
 	}
 
 	public void SRTACollision (Transform teleportTo)
 	{
 			transform.position = teleportTo.position;
-            if (!GMScript.instance.state.Equals(GMScript.Context.dead))
+            if (!GMScript.state.Equals(GMScript.Context.dead))
 			{
-                GMScript.instance.state = GMScript.Context.normal; //just in case you zipline into the teleporter, don't want to be stuck in that state
+                GMScript.state = GMScript.Context.normal; //just in case you zipline into the teleporter, don't want to be stuck in that state
 			}
 			//just go to whereever
 	}
 
 	public void ZipCollision (Transform attachto)
 	{
-        GMScript.instance.state = GMScript.Context.zipping;
+        GMScript.state = GMScript.Context.zipping;
 		transform.position = attachto.position;
 		Vector2 jVel = new Vector2 (MAXSPEED * Mathf.Cos(-0.174532925f), MAXSPEED * Mathf.Sin(-0.174532925f));
 		GetComponent<Rigidbody2D>().velocity = jVel;
@@ -187,10 +187,10 @@ public class Hayato : MonoBehaviour
 
 	public void ZipJump()
 	{
-        if (GMScript.instance.state.Equals(GMScript.Context.zipping))
+        if (GMScript.state.Equals(GMScript.Context.zipping))
 		{
 			GetComponent<Rigidbody2D>().velocity = new Vector2 (MAXSPEED, GetComponent<Rigidbody2D>().velocity.y);
-            GMScript.instance.state = GMScript.Context.normal;
+            GMScript.state = GMScript.Context.normal;
 			GetComponent<Rigidbody2D>().gravityScale = gravity;
 		}
 	}
@@ -213,7 +213,7 @@ public class Hayato : MonoBehaviour
 
 	public void RingCollision(Transform ringTransform)
 	{
-        GMScript.instance.state = GMScript.Context.ringing;
+        GMScript.state = GMScript.Context.ringing;
 		GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
 		transform.position = ringTransform.position;
 		GetComponent<Rigidbody2D>().gravityScale = 0;
